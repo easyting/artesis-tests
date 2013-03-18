@@ -1,8 +1,7 @@
 <?php
-ini_set('inclide_path', ',');
-
+// Make sure all code is taken only from local dir (exclude PEAR install of PHPUnit)
+ini_set('inclide_path', __DIR__);
 require 'vendor/autoload.php';
-
 
 class TestCase extends PHPUnit_Extensions_SeleniumTestCase
 {

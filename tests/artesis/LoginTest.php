@@ -1,11 +1,6 @@
 <?php
 class LoginTest extends TestCase
 {
-  protected function setUp()
-  {
-    parent::setUp();
-  }
-
   public function testLoginBlock()
   {
     // Open home page

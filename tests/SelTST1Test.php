@@ -2,6 +2,14 @@
 class SelTST1Test extends TestCase
 {
 
+  protected function setUp()
+  {
+    parent::setUp();
+
+    //This test must be run for the gven site only
+    $this->setBrowserUrl('http://slagbib-latest.ci.inlead.dk/');
+  }
+
   public function testMyTestCase()
   {
     $this->open("/da/");

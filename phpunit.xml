@@ -18,7 +18,7 @@
 
 	<!-- Set PHP variables or ini settings -->
 	<php>
-		<var name="url" value="http://slagbib-latest.ci.inlead.dk" />
+		<var name="url" value="http://artesis-latest.ci.inlead.dk" />
 	</php>
 
 <!-- 

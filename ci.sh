@@ -1,7 +1,8 @@
 #!/bin/sh
+cd $(dirname $0)
 
 ## Fron Jenkins
-INSTANCE="artesis-l-${BUILD_NUMBER}"
+INSTANCE="artesis-ls-${BUILD_NUMBER}"
 
 ## Local vars
 SELENIUM_BROWSER_URL=http://$INSTANCE.ci.inlead.dk

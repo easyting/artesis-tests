@@ -7,13 +7,12 @@ class LoginTest extends TestCase
     $this->open('/');
 
     // Submit login form
-    $this->click('css=section#block-user-login h2.block-title');
-    $this->type('edit-name', 'admin');
-    $this->type('edit-pass', '1234');
-    $this->submit('user-login-form');
-    $this->waitForPageToLoad();
+    $this->byCssSelector('section#block-user-login h2.block-title')->click();
+    $this->byId('edit-name')->value('admin');
+    $this->byId('edit-pass')->value('1234');
+    $this->byId('user-login-form')->submit();
 
     // Check if logged in as "admin"
-    $this->assertContains('Velkommen<span>admin</span>', $this->getHtmlSource());
+    $this->assertContains('Velkommen<span>admin</span>', $this->source());
   }
 }
